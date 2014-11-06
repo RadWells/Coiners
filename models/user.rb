@@ -1,7 +1,8 @@
 class User < ActiveRecord::Base
   include BCrypt
-  has_many :judgements
-  has_many :kittens, through: :judgements
+  has_many :ticturns
+  has_many :tictactoes, through: :ticturns
+  has_many :wordgames
 
   def password
     @password ||= Password.new(self.password_hash)
