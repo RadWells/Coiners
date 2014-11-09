@@ -2,7 +2,7 @@ class User < ActiveRecord::Base
   include BCrypt
   has_many :ticturns
   has_many :tictactoes, through: :ticturns
-  has_many :wordgames
+  has_many :word_games
 
   def password
     @password ||= Password.new(self.password_hash)

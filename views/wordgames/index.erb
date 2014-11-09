@@ -1,0 +1,48 @@
+
+
+<h2 class='word'></h2> <!-- sets class for <h2> so we can grab it and update text node with JS -->
+
+<% ('A'..'Z').to_a.each do |letter| %> 
+  <button class='letter-button' data-gameid="<%= @game.id %>" data-letter="<%= letter %>"><%= letter %></button>
+<% end %> <!-- creates one button for each letter in range, which is the alphabet -->
+
+
+<script type="text/javascript">
+  
+  $(function(){    // when the window is ready...
+
+    $('button.letter-button').on('click', function(e){  // runs this anonymous function on the button click
+      var $button = $(this);  //defines $button as this button
+      var gameid = $button.data('gameid'); // sets gameid to the game id of the curent game
+      var letterGuess = $button.data('letter'); // var here to the data-letter value of the button pressed
+
+      $.ajax({
+        url: '/word_games/' + gameid + '/api/guess', // ajax request sending user guess
+        method: 'PATCH', // we are updating
+        dataType: 'JSON', //we are using json
+        data: {guess: letterGuess},   // Send the letter the user guessed
+        success: function(data){ // function that if ajax request works, sets text node of h2 to the current game state
+          $('h2.word').text(data.game_state);
+          console.log(data)
+          if (data.complete){ // if game is complete, reward player with positive message and restart the game
+            alert(data.message_from_the_server); 
+            window.location = '/word_games';
+          }
+          
+          $('h1.guess-count').text(data.bad_guess.split("").length )
+
+          if (data.bad_guess.length > 8){
+            alert('lost')
+            window.location = '/word_games';
+          }
+
+          $button.remove(); // removes button if it has been clicked
+        }
+      });
+
+    })
+
+  })
+  
+
+</script>

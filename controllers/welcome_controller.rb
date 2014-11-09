@@ -1,6 +1,6 @@
 class WelcomeController < ApplicationController
   get '/' do
-  "Hello, Bro"
+    "Hello, Bro"
     erb :index
   end
 end

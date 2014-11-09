@@ -2,15 +2,29 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Kinder</title>
+  <title>Coiners: </title>
   <link rel="stylesheet" href="/stylesheets/styles.css">
+  <link href='http://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=VT323|Architects+Daughter|Kranky' rel='stylesheet' type='text/css'>
+  <script src='/javascripts/jquery.js'></script>
   <script src='/javascripts/scripts.js'></script>
 </head>
+
 <body>
+  <div class="masthead">
+  <h1>Coiners</h1>
+  </div>
+ 
 
-  
+<% if current_user %>
+    <%= erb :'partials/_nav_for_user'%>
+    <% else %>
+    <%= erb :'partials/_nav_for_non_user'%>
+  <% end %>
 
-  <%= yield %>
+
+<%=yield%>
+
 
 </body>
 </html>

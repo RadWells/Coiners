@@ -1,4 +1,37 @@
-body {
-  background: #0000FF;
+*{
+  font-family: 'Architects+Daughter';
 
 }
+
+
+body {
+  background: #87CEFA;
+
+}
+
+.masthead{
+   text-decoration: none;
+   text-align: center;
+   font-size: 48px;
+}
+
+div {
+        height: 50px;
+      }
+      span {
+
+      }
+      #word {
+
+      }
+      form {
+        margin-bottom: 20px;
+      }
+      p {
+        display: inline-block;
+        margin-right: 10px;
+        border-bottom: 1px solid black;
+        width: 20px;
+        height: 20px;
+        text-align: center;
+      }

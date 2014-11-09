@@ -12,14 +12,19 @@ class UsersController < ApplicationController
     user = User.new(params[:user])
     user.password = params[:password]
     user.save!
-    redirect "/users/profile"
+    redirect "/"
   end
 
   get '/profile' do
     authenticate!
-    erb :'users/profile'
+    erb :"users/profile"
   end
 
+  get '/index' do
+     authenticate!
+   end
+
 end
-  
+ 
+
 

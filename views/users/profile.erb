@@ -1,0 +1,15 @@
+<p>Hello, <%= current_user.username %>! Ready to play?</p>
+
+<a class="button2" href="/mystery">Play Mystery Word!</a> 
+
+
+
+<ul class='games'>
+  <% current_user.word_games.each do |game| %>
+    <li>
+      <a href="/word_games/<%= game.id %>">
+        <%= game.complete ? game.word : game.game_state %>
+      </a>
+    </li>
+  <% end %>
+</ul>
