@@ -1,16 +1,12 @@
-*{
-  font-family: 'Press Start 2P', cursive;
-}
 
-
-html { 
-  background:  url('/images/arcade2.jpg') no-repeat center center fixed; 
-  background-size: cover;
-}
 
 body {
-  /*background: #104E8B;*/
-
+  font-family: 'Press Start 2P', cursive;
+  background: url('/images/Arcade2.jpg') no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 .masthead{
@@ -69,3 +65,4 @@ body {
    border-top-color: #1b435e;
    background: #1b435e;
    }
+

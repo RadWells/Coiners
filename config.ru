@@ -1,8 +1,11 @@
 require 'bundler'
 Bundler.require
 
+require 'sinatra/base'
+
 require './models/user'
 require './models/word_game'
+
 
 
 require './helpers/authentication_helper'

@@ -1,0 +1,323 @@
+/* reset */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+b, strong { font-weight: bold }
+i, em { font-style: italic }
+/*reset end */
+
+
+body {
+  background: url('/images/whitmanmap.jpg') no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  font-family: 'IM Fell DW Pica', serif;
+}
+
+.impress-enabled .step {
+    margin: 0;
+    opacity: 0.0;
+    -webkit-transition: opacity 1s;
+    -moz-transition:    opacity 1s;
+    -ms-transition:     opacity 1s;
+    -o-transition:      opacity 1s;
+    transition:         opacity 1s;
+}
+
+.impress-enabled .step.active { opacity: 1 }
+.slide {
+    display: block;
+    width: 750px;
+    height: 575px;
+    padding: 40px 60px;
+    background: url('/images/Oldpaper.jpg');
+    border: 1px groove rgba(0, 0, 0, .3);
+    color: rgb(52, 52, 52);
+    text-shadow: 0 2px 2px rgba(0, 0, 0, .1);
+    border-radius: 5px;
+    font-family: 'IM Fell DW Pica', serif;
+    font-size: 20px;
+} 
+
+.slide p{
+  margin-top:15px;
+  margin-bottom:30px;
+  line-height:45px;
+}
+
+.slide a, .slide a:visited {
+  color: #071549;
+  text-decoration: none;
+  background-color: #abc;
+  padding:5px;
+  border-radius: 5px;
+  border: 0px;
+}
+
+.slide a:hover, .slide a:active{
+  background-color: #cde;
+}
+
+.slide .slide-text{
+  height: 450px;
+}
+
+div.menu{
+  border-top:1px solid black;
+  padding-top:25px;
+  text-align: center;
+  
+}
+
+img.item{
+  width:100%;
+  height:100%;
+  cursor: move;
+  padding:0px;
+}
+
+/* CSS for Inventory
+
+
+#satchel{
+  position: fixed; 
+  text-align: center;
+  width:180px;
+  padding:15px;
+  border-radius: 5px;
+  top: 75px; 
+  left: 25px; 
+  background-image: url('vintage2.jpg');
+}
+
+.menu .inventory-box{
+  margin-right:20px;
+}
+
+.inventory-box{
+  position: static;
+  display: inline-block;
+  height:130px;
+  width:130px;
+  border-radius: 5px;
+  text-align:center;
+  background-image: url('vintage2.jpg')
+}
+
+.inventory-box.empty{
+  border: 2px groove #000;
+} */
+
+h1{
+  font-weight:bold;
+  font-size:30px;
+  margin-bottom:15px;
+}
+
+h2 {
+  font-size: 25px;
+}
+
+.title {
+  font-size: 20px;
+  color: darkred;
+   width: 700px ;
+  font-family: 'Rye', cursive;
+
+}
+
+.titlepage {
+  text-align: center;
+}
+
+.walt {
+  background-image: url('WaltWhitman.jpg');
+  height: 500px;
+  width: 500px;
+}
+
+     
+
+
+
+
+
+
+
+
+
+
+     /* html, body, div, span, applet, object, iframe,
+    h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+    a, abbr, acronym, address, big, cite, code,
+    del, dfn, em, img, ins, kbd, q, s, samp,
+    small, strike, strong, sub, sup, tt, var,
+    b, u, i, center,
+    dl, dt, dd, ol, ul, li,
+    fieldset, form, label, legend,
+    table, caption, tbody, tfoot, thead, tr, th, td,
+    article, aside, canvas, details, embed, 
+    figure, figcaption, footer, header, hgroup, 
+    menu, nav, output, ruby, section, summary,
+    time, mark, audio, video {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        font-size: 100%;
+        font: inherit;
+        vertical-align: baseline;
+    }
+
+    article, aside, details, figcaption, figure, 
+    footer, header, hgroup, menu, nav, section {
+        display: block;
+    }
+
+    ol, ul {
+        list-style: none;
+    }
+
+    table {
+        border-collapse: collapse;
+        border-spacing: 0;
+    }
+
+    b, strong { 
+      font-weight: bold 
+    }
+
+    i, em { 
+      font-style: italic 
+    }
+    /*Reset end 
+
+
+    body {
+      background: url('/images/whitmanmap.jpg') no-repeat center center fixed; 
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+      font-family: 'IM Fell DW Pica', serif;
+     }
+
+    .impress-enabled .step {
+        margin: 0;
+        opacity: 0.0;
+        -webkit-transition: opacity 1s;
+        -moz-transition:    opacity 1s;
+        -ms-transition:     opacity 1s;
+        -o-transition:      opacity 1s;
+        transition:         opacity 1s;
+       }
+
+    .impress-enabled .step.active { opacity: 1 }
+    .slide {
+        display: block;
+        width: 750px;
+        height: 575px;
+        padding: 40px 60px;
+       background-image: url('/images/Oldpaper.jpg') no-repeat center center fixed;
+        border: 1px groove rgba(0, 0, 0, .3);
+        color: rgb(52, 52, 52);
+        text-shadow: 0 2px 2px rgba(0, 0, 0, .1);
+        border-radius: 5px;
+        font-family: 'IM Fell DW Pica', serif;
+        font-size: 20px;
+    }
+
+    .slide p {
+      margin-top:15px;
+      margin-bottom:30px;
+      line-height:45px;
+    }
+
+    .slide a, .slide a:visited {
+      color: #071549;
+      text-decoration: none;
+      background-color: #abc;
+      padding:5px;
+      border-radius: 5px;
+      border: 0px;
+    }
+
+    .slide a:hover, .slide a:active{
+      background-color: #cde;
+    }
+
+    .slide .slide-text{
+      height: 450px;
+    }
+
+    div.menu{
+      border-top:1px solid black;
+      padding-top:25px;
+      text-align: center;
+      
+    }
+
+    img.item{
+      width:100%;
+      height:100%;
+      cursor: move;
+      padding:0px;
+    }
+
+    h1{
+      font-weight:bold;
+      font-size:30px;
+      margin-bottom:15px;
+    }
+
+    h2 {
+      font-size: 25px;
+    }
+
+    .title {
+      font-size: 20px;
+      color: darkred;
+       width: 700px ;
+      font-family: 'Rye', cursive;
+
+    }
+
+    .titlepage {
+      text-align: center;
+    }
+
+*/
+
