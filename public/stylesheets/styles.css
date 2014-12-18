@@ -1,12 +1,15 @@
 *{
   font-family: 'Press Start 2P', cursive;
-  
-
 }
 
 
+html { 
+  background:  url('/images/arcade2.jpg') no-repeat center center fixed; 
+  background-size: cover;
+}
+
 body {
-  background: #104E8B;
+  /*background: #104E8B;*/
 
 }
 
@@ -15,7 +18,7 @@ body {
    text-align: center;
    font-size: 48px;
    color: #00C957;
-   background-color: #36648B;
+   background-color: #000080;
 }
 
 .navigation{
