@@ -1,11 +1,12 @@
 *{
-  font-family: 'Architects+Daughter';
+  font-family: 'Press Start 2P', cursive;
+  
 
 }
 
 
 body {
-  background: #87CEFA;
+  background: #104E8B;
 
 }
 
@@ -13,25 +14,59 @@ body {
    text-decoration: none;
    text-align: center;
    font-size: 48px;
+   color: #00C957;
+   background-color: #36648B;
 }
 
-div {
-        height: 50px;
-      }
-      span {
+.navigation{
+   width: 1050px ;
+   height: 30px;
+   margin-left: auto ;
+   margin-right: auto ;
+   margin-top: 50px;
+   background-color: #00C957;
+   text-align: center;
+ }
 
-      }
-      #word {
+.navigation:hover {
+  background-color: #FF8000;
+}
 
-      }
-      form {
-        margin-bottom: 20px;
-      }
-      p {
-        display: inline-block;
-        margin-right: 10px;
-        border-bottom: 1px solid black;
-        width: 20px;
-        height: 20px;
-        text-align: center;
-      }
+.gameplay{
+
+  text-align: center;
+}
+
+.letter-button{
+  border-top: 0px solid #f8f8ff;
+   background: #FFA500;
+   padding: 4px 9px;
+   font-size: 1.1em;
+   text-decoration: none;
+   vertical-align: middle;
+
+
+
+
+}
+
+
+.button2 { 
+   border-top: 1px solid yellow;
+   background: #FF8000;
+   padding: 4px 9px;
+   font-size: 1.1em;
+   text-decoration: none;
+   vertical-align: middle;
+
+   }
+
+.button2:hover {
+   border-top-color: #3d59ab;
+   background: #36648B;
+   color: #00C957;
+   }
+.button2:active {
+   border-top-color: #1b435e;
+   background: #1b435e;
+   }
