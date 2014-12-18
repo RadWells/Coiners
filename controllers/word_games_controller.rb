@@ -2,7 +2,7 @@ class WordGamesController < ApplicationController
   get '/' do 
     authenticate! #current_user
     @game = WordGame.create #creates new game
-    current_user.word_games << @game #adds newly created game to users ganes in db
+    current_user.word_games << @game #adds newly created game to users games in db
     erb :'wordgames/index' #redirects to view serving up the actual game
   end
 
